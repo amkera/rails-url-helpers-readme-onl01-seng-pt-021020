@@ -4,7 +4,9 @@
 
 <!--refactor: Instead of hard-coding the path and using string interpolation, let's use post_path and pass in the post argument.
 
-
+<% @posts.each do |post| %>
+  <div><%= link_to post.title, post_path(post.id) %></div>
+<% end %>
 
 
 
